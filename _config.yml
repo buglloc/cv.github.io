@@ -1,0 +1,146 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Андрей Красичков
+title: Инженер по информационной безопасности
+email: job@buglloc.cc
+website: https://ut.buglloc.com/
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+# twitter_username: facespics
+github_username:  buglloc
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: buglloc
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: buglloc
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+about_title: Обо мне
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Привет, меня зовут Андрей и я инженер по информационной безопасности. Последние пару лет занимаюсь чем-то между application и infrastructure security. При необходимости разрабатываю необходимый тулинг, сервисы и всё что потребуется для решения задачи. Чаще всего пишу на Go, реже на TypeScript, еще реже на C++ и Python.
+
+  В свободное время пытаюсь облегчить жизнь с помощью подручных средств (IoT, Homelab, etc), веду нерегулярный [технобложик](https://t.me/UTBDK) и гуляю с котом.
+
+content:
+  - title: Случайные OSS проекты # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: GIXY — SAST для Nginx
+        link: https://github.com/yandex/gixy
+        # quote: >
+        #   Gixy — тулинг для анализа [не]безопасности конфигураций Nginx
+        description: |
+          Было время, когда количество кастомных (написаных вручную) конфигураций Nginx вокруг меря перевалило за все мыслимые пределы. Так и родился [Gixy](https://github.com/yandex/gixy), поработал, принес пользы и был заброшен при спаде популярности ручных конфигов.
+
+          У Gixy есть и побочный мини-проект - [Reni](https://github.com/buglloc/reni), который специализируется на генерации значений под регулярные выражения (см. [demo](https://reni.buglloc.com/)).
+
+      - layout: top-middle
+        title: Brick - Bitrix24 messenger client
+        link: https://github.com/buglloc/brick
+        description: |
+          Долгое время Bitrix24 не имел офф. клиента под GNU/Linux, а он мне был нужен. Мириться с этим я не хотел и не стал, написал собственный и ощасливил какое-то количество линуксоидов вокруг себя :)
+
+      - layout: top-middle
+        title: RIP - DNS echo server
+        link: https://github.com/buglloc/rip
+        additional_links:
+          - title: DEMO
+            url: https://yandex.tatar
+        description: |
+          Однажды я устал каждый раз руками конфигурить DNS под очередной кейс эксплуатации DNS Rebinding, демонстрации проблем с валидацией хостов/ориджинов и т.д. Так и появился RIP ([demo](https://yandex.tatar)), которым пользуюсь до сих пор.
+
+      - layout: top-middle
+        title: php-xss-maker - helper for finding stored XSS
+        link: https://github.com/buglloc/php-xss-maker
+        description: |
+          Один из подходов к облегчению поиска хранимых XSSок в PHP с помощью DAST или ручников. Первые запуски разрывали фронт в клочья >_<
+
+  - title: Какие-то CVEшки
+    layout: text
+    content: |
+      Не считаю наличие CVEшек в вакууме чем-то важным, но какие-то случайно есть у меня:
+        - [CVE-2019-5830: Google Chrome cross-origin data leakage](https://issues.chromium.org/issues/40085972)
+        - [CVE-2016-9895: Firefox CSP bypass using marquee tag](https://www.mozilla.org/en-US/security/advisories/mfsa2016-95/#CVE-2016-9895)
+        - [CVE-2018-10915: PostgreSQL LPE using "dblink" or "postgres_fdw" extensions](https://www.postgresql.org/about/news/postgresql-105-9610-9514-9419-9324-and-11-beta-3-released-1878/) ([постик на тему](https://habr.com/ru/articles/440394/))
+        - Various ClickHouse vulnerabilities: [CVE-2018-14668](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14668), [CVE-2018-14669](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14669), [CVE-2018-14671](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14671), [CVE-2018-14672](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14672)
+        - Various ONLYOFFICE vulnerabilities: [CVE-2020-11534](https://nvd.nist.gov/vuln/detail/CVE-2020-11534), [CVE-2020-11535](https://nvd.nist.gov/vuln/detail/CVE-2020-11535), [CVE-2020-11536](https://nvd.nist.gov/vuln/detail/CVE-2020-11536)
+
+  - title: Опыт работы
+    layout: list
+    content:
+      - layout: left
+        title: Yandex
+        sub_title: Инженер по информационной безопасности
+        caption: Март 2016 - настоящее время
+        quote: >
+          Починил бесконечное количество штук. Сломал бесконечое количество штук.
+        description: |
+            Приходил в продуктовую безопасность, перекатился в инфраструктурную (внутренее облако и около). По дороге принимал непосредственное участие в множестве проектов. Например:
+              - построили процесс/написали софт для обнаружения и предотвращения лика пользовательских секретов
+              - написали софт и перевели 10k+ сотрудников на SSH сертификаты и passwordless sudo с хранением ключей в Yubikey/Secure Enclave
+              - написали eBPF-powered агент для сбора событий безопасности во внутренем облаке для 100k+ нод
+              - написали софт для статического анализа контейнеров и конфигураций подов
+
+      - layout: left
+        title: Bitrix, Inc.
+        sub_title: Инженер по информационной безопасности
+        caption: Декабрь 2011 - Март 2016
+        quote: >
+          Заменял собой отдел безопасности. От application до infrastructure security. От SDLC до разработки фич безопасности.
+        description: |
+            В большей степени отвечал за поддержку SDLC на плаву, аудитами продукта и облачной инфраструктуры, ревью архитектуры и разработкой/проектированием новых продуктовых фич безопасности. Например, SAST ([постик на тему](https://dev.1c-bitrix.ru/community/blogs/information_security/static_taint_analysis_tool.php)) и DAST ([постик на тему](https://dev.1c-bitrix.ru/community/blogs/information_security/security-scanner-in-125.php)) в составе коробочного продукта и обязательного этапа перед попаданием стороних решений в Маркетплейс продукта.
+
+      - layout: left
+        title: A2Entertaiment
+        sub_title: Игровых дел мастер
+        caption: Июль 2010 - Декабрь 2011
+        quote: >
+          Было сложно, было весело, иногда очень далеко от зоны комфорта
+        description: |
+            Вместе с партнером и небольшой командой, занимался разработкой 2D казуалок для PC на C++. Как-то часто бывает в инди, помимо самой разработки пришлось познакомиться и с множеством смежных областей.
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
