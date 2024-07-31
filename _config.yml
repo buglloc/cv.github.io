@@ -73,10 +73,10 @@ content:
           Долгое время не было официального клиента для Bitrix24 под GNU/Linux, а он мне был нужен. Мириться с этим я не хотел и не стал, написал собственный и ощасливил какое-то количество линуксоидов вокруг себя :)
 
       - layout: top-middle
-        title: DNSGateway - RFC 2136 <--> Cloudflare/AdGuard Home proxy
+        title: DNSGateway - RFC 2136 <--> Cloudflare/AdGuard proxy
         link: https://github.com/buglloc/DNSGateway
         description: |
-          Мне нужен был способ более удобного управления DNS-записями в Cloudflare и AdGuard Home, таким стал DNSGateway. Хотя он и не стал популярным, я всё ещё с удовольствием им пользуюсь.
+          Мне нужен был способ более удобного управления DNS-записями в Cloudflare и AdGuard Home, таким стал DNSGateway. Ждёт своего часа, чтобы стать популярным.
 
       - layout: top-middle
         title: RIP - DNS echo server
