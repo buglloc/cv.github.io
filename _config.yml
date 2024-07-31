@@ -1,15 +1,21 @@
 # Site
-repository: sproogen/resume-theme
+repository: buglloc/cv.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Андрей Красичков
-title: Инженер по информационной безопасности
+title: Андрей Красичков
+description: Инженер по информационной безопасности
+image: images/profile.jpg
 email: job@buglloc.cc
 website: https://ut.buglloc.com/
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: images/profile.jpg
 
 # Dark Mode (true/false/never)
 darkmode: true
@@ -37,12 +43,6 @@ linkedin_username: buglloc
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
 
 # About Section
 about_title: Обо мне
@@ -113,7 +113,7 @@ content:
         quote: >
           Починил бесконечное количество штук. Сломал бесконечное количество штук.
         description: |
-            Приходил в продуктовую безопасность, перекатился в инфраструктурную (i.e. внутреннее облако и около). По дороге принимал непосредственное участие во множестве проектов, включая следующие:
+            Приходил в продуктовую безопасность, перекатился в инфраструктурную (i.e. внутреннее облако и около). По дороге принимал непосредственное участие во множестве проектов. Включая, но не ограничиваясь:
               - построили процесс/написали софт для обнаружения и предотвращения лика разнообразных секретов
               - написали софт и перевели 10k+ сотрудников на SSH сертификаты и passwordless sudo с хранением ключей в Yubikey/Secure Enclave
               - написали и раскатили на 100k+ нод eBPF-powered агент для сбора событий с контейнеров и хостов
