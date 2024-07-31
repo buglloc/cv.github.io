@@ -62,7 +62,7 @@ content:
         # quote: >
         #   Gixy — тулинг для анализа [не]безопасности конфигураций Nginx
         description: |
-          Слишком много конфигов для Nginx люди пишут руками? Делают в них уязвимости? Самое время написать SAS, подумал я. И написал.Так родился [Gixy](https://github.com/yandex/gixy), который поработал, принес пользы и был заброшен, когда мы перестали в нем нуждаться.
+          Слишком много конфигов для Nginx люди пишут руками? Делают в них уязвимости? Самое время написать SAS, подумал я. И написал [Gixy](https://github.com/yandex/gixy) ([постик на тему](https://habr.com/ru/companies/yandex/articles/327590/)), который поработал, принес пользы и был заброшен, когда мы перестали в нем нуждаться.
 
           У Gixy ещё один интересный сайд-проект - [Reni](https://github.com/buglloc/reni). Он специализируется на создании значений, подходящих под регулярные выражения. Эдакий солвер для регулярок, который проще один раз увидеть - [https://reni.buglloc.com/](https://reni.buglloc.com/).
 
@@ -71,6 +71,12 @@ content:
         link: https://github.com/buglloc/brick
         description: |
           Долгое время не было официального клиента для Bitrix24 под GNU/Linux, а он мне был нужен. Мириться с этим я не хотел и не стал, написал собственный и ощасливил какое-то количество линуксоидов вокруг себя :)
+
+      - layout: top-middle
+        title: DNSGateway - RFC 2136 <--> Cloudflare/AdGuard Home proxy
+        link: https://github.com/buglloc/DNSGateway
+        description: |
+          Мне нужен был способ более удобного управления DNS-записями в Cloudflare и AdGuard Home, таким стал DNSGateway. Хотя он и не стал популярным, я всё ещё с удовольствием им пользуюсь.
 
       - layout: top-middle
         title: RIP - DNS echo server
