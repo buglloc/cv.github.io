@@ -62,9 +62,9 @@ content:
         # quote: >
         #   Gixy — тулинг для анализа [не]безопасности конфигураций Nginx
         description: |
-          Слишком много конфигов для Nginx люди пишут руками? Делают в них уязвимости? Самое время написать SAS, подумал я. И написал [Gixy](https://github.com/yandex/gixy) ([постик на тему](https://habr.com/ru/companies/yandex/articles/327590/)), который поработал, принес пользы и был заброшен, когда мы перестали в нем нуждаться.
+          Слишком много конфигов для Nginx люди пишут руками? Делают в них уязвимости? Самое время написать SAS, подумал я. И написал [Gixy](https://habr.com/ru/companies/yandex/articles/327590/), который поработал, принес пользы и был заброшен, когда мы перестали в нем нуждаться.
 
-          У Gixy ещё один интересный сайд-проект - [Reni](https://github.com/buglloc/reni). Он специализируется на создании значений, подходящих под регулярные выражения. Эдакий солвер для регулярок, который проще один раз увидеть - [https://reni.buglloc.com/](https://reni.buglloc.com/).
+          У Gixy ещё один интересный сайд-проект - [Reni](https://reni.buglloc.com/). Он специализируется на создании значений, подходящих под регулярные выражения. Эдакий солвер для регулярок, который проще один раз увидеть.
 
       - layout: top-middle
         title: Brick - Bitrix24 messenger client
@@ -76,16 +76,13 @@ content:
         title: DNSGateway - RFC 2136 <--> Cloudflare/AdGuard proxy
         link: https://github.com/buglloc/DNSGateway
         description: |
-          Мне нужен был способ более удобного управления DNS-записями в Cloudflare и AdGuard Home, таким стал DNSGateway. Ждёт своего часа, чтобы стать популярным.
+          Мне нужен был способ более удобного управления DNS-записями в [Cloudflare](https://ut.buglloc.com/home-infra/dnsgateway-acme/) и [AdGuard Home](https://ut.buglloc.com/home-infra/bye-coredns/), таким стал [DNSGateway](https://github.com/buglloc/DNSGateway). Ждёт своего часа, чтобы стать популярным.
 
       - layout: top-middle
         title: RIP - DNS echo server
         link: https://github.com/buglloc/rip
-        additional_links:
-          - title: DEMO
-            url: https://yandex.tatar
         description: |
-          Однажды я устал каждый раз настраивать DNS вручную для разных случаев эксплуатации DNS Rebinding, демонстрации проблем с валидацией хостов/ориджинов и т.д. Так и появился RIP ([demo](https://yandex.tatar)), которым пользуюсь до сих пор.
+          Однажды я устал каждый раз настраивать DNS вручную для разных случаев эксплуатации DNS Rebinding, демонстрации проблем с валидацией хостов/ориджинов и т.д. Так и появился [RIP](https://z.buglloc.com/), которым пользуюсь до сих пор.
 
       - layout: top-middle
         title: php-xss-maker - helper for finding stored XSS
@@ -99,7 +96,7 @@ content:
       Не считаю наличие CVEшек в вакууме чем-то важным, но какие-то случайно есть у меня:
         - [CVE-2019-5830: Google Chrome cross-origin data leakage](https://issues.chromium.org/issues/40085972)
         - [CVE-2016-9895: Firefox CSP bypass using marquee tag](https://www.mozilla.org/en-US/security/advisories/mfsa2016-95/#CVE-2016-9895)
-        - [CVE-2018-10915: PostgreSQL LPE using "dblink" or "postgres_fdw" extensions](https://www.postgresql.org/about/news/postgresql-105-9610-9514-9419-9324-and-11-beta-3-released-1878/) ([постик на тему](https://habr.com/ru/articles/440394/))
+        - [CVE-2018-10915: PostgreSQL LPE using "dblink" or "postgres_fdw" extensions](https://habr.com/ru/articles/440394/)
         - Various ClickHouse vulnerabilities: [CVE-2018-14668](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14668), [CVE-2018-14669](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14669), [CVE-2018-14671](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14671), [CVE-2018-14672](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14672)
         - Various ONLYOFFICE vulnerabilities: [CVE-2020-11534](https://nvd.nist.gov/vuln/detail/CVE-2020-11534), [CVE-2020-11535](https://nvd.nist.gov/vuln/detail/CVE-2020-11535), [CVE-2020-11536](https://nvd.nist.gov/vuln/detail/CVE-2020-11536)
 
@@ -126,7 +123,7 @@ content:
         quote: >
           Заменял собой отдел безопасности. От application до infrastructure security. От SDLC до разработки фич безопасности.
         description: |
-            В большей степени отвечал за поддержку SDLC на плаву. Проводил аудиты безопаности продукта и облачной инфраструктуры. Делал ревью архитектуры и разрабатывал новые продуктовые фичи безопасности, например, SAST ([постик на тему](https://dev.1c-bitrix.ru/community/blogs/information_security/static_taint_analysis_tool.php)) и DAST ([постик на тему](https://dev.1c-bitrix.ru/community/blogs/information_security/security-scanner-in-125.php)). В итоге SAST стал обязательным этом перед попаданием сторонних решений в маркетплейс.
+            В большей степени отвечал за поддержку SDLC на плаву. Проводил аудиты безопаности продукта и облачной инфраструктуры. Делал ревью архитектуры и разрабатывал новые продуктовые фичи безопасности, например, [SAST](https://dev.1c-bitrix.ru/community/blogs/information_security/static_taint_analysis_tool.php) и [DAST](https://dev.1c-bitrix.ru/community/blogs/information_security/security-scanner-in-125.php). В итоге SAST стал обязательным этом перед попаданием сторонних решений в маркетплейс.
 
       - layout: left
         title: A2Entertaiment
