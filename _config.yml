@@ -99,6 +99,7 @@ content:
         - [CVE-2018-10915: PostgreSQL LPE using "dblink" or "postgres_fdw" extensions](https://habr.com/ru/articles/440394/)
         - Various ClickHouse vulnerabilities: [CVE-2018-14668](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14668), [CVE-2018-14669](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14669), [CVE-2018-14671](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14671), [CVE-2018-14672](https://clickhouse.com/docs/en/whats-new/security-changelog#cve-2018-14672)
         - Various ONLYOFFICE vulnerabilities: [CVE-2020-11534](https://nvd.nist.gov/vuln/detail/CVE-2020-11534), [CVE-2020-11535](https://nvd.nist.gov/vuln/detail/CVE-2020-11535), [CVE-2020-11536](https://nvd.nist.gov/vuln/detail/CVE-2020-11536)
+        - [CVE-2024-47877: various archive extraction vulnerabilities in github.com/codeclysm/extract/v3](https://github.com/codeclysm/extract/security/advisories/GHSA-8rm2-93mq-jqhc)
 
   - title: Опыт работы
     layout: list
